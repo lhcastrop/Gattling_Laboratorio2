@@ -14,8 +14,8 @@ class TransferFunds extends Simulation{
     .check(status.is(200))
 
   // 2 Scenario Definition
-  val scn = scenario("TransferFunds").
-    exec(http("TransferFunds requests")
+  val scn = scenario("Escalabilidad en Transacciones").
+    exec(http("Transferencias de fondos solicitadas")
       .post("/transfer")  
       .queryParam("fromAccountId", fromAccountId)
       .queryParam("toAccountId", toAccountId)
